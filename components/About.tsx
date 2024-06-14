@@ -2,6 +2,8 @@
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const words = `I am Pooja Bangar. I am a Graphic Gesigner by profession, I am a freelancer as well, I have completed my education in Graphic Designing and now moving for my higher studies in US
+I am passaniote about my work and my hobbies are singing dancing.I am Pooja Bangar. I am a Graphic Gesigner by profession, I am a freelancer as well, I have completed my education in Graphic Designing and now moving for my higher studies in US
+I am passaniote about my work and my hobbies are singing dancing.I am Pooja Bangar. I am a Graphic Gesigner by profession, I am a freelancer as well, I have completed my education in Graphic Designing and now moving for my higher studies in US
 I am passaniote about my work and my hobbies are singing dancing.
 `;
 

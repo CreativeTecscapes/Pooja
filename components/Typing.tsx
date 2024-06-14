@@ -32,11 +32,11 @@ const Typing = () => {
     return (
        
             <div className="flex items-center justify-center">
-                <div className='mt-40'>
+                <div className='mt-40 lg:w-full'>
                     <div className="text-2xl sm:text-5xl lg:text-6xl tracking-wide flex flex-col sm:flex-row justify-center p-5 sm:p-10 mt-5 mb-5 text-[#3B82F6]">
                         <div className="typing mb-5 sm:mb-0 sm:mr-5 flex justify-center items-center">
-                            <span className="text-black mr-2 lg:mr-5">I am</span>
-                            <span ref={typingRef} />
+                        <span className="text-black mr-2 lg:mr-5">I am</span>
+                            <span ref={typingRef}/>
                         </div>
                     </div>
                 </div>
