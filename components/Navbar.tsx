@@ -2,13 +2,26 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
+
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 export default function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
       <Navbar className="top-2" />
       <p className="text-black dark:text-white">
-        
+
       </p>
     </div>
   );
@@ -57,14 +70,40 @@ function Navbar({ className }: { className?: string }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+        <MenuItem setActive={setActive} active={active} item="Socials">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/hobby"><Image src="/instagram.png" height={40} width={40} alt="" /></HoveredLink>
+            <HoveredLink href="/individual"><Image src="/linkedin.png" height={40} width={40} alt="" /></HoveredLink>
+            <HoveredLink href="/team"><Image src="/youtube.png" height={40} width={40} alt="" /></HoveredLink>
+            <HoveredLink href="/enterprise"><Image src="/twitter.png" height={40} width={40} alt="" /></HoveredLink>
+            <HoveredLink href="/enterprise"><Image src="/gmail.png" height={40} width={40} alt="" /></HoveredLink>
           </div>
         </MenuItem>
+
+        <MenuItem setActive={setActive} active={active} item="Resume">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/hobby">Download</HoveredLink>
+            <HoveredLink href="">
+              <AlertDialog>
+                <AlertDialogTrigger>Open</AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                    <AlertDialogDescription>
+                      This action cannot be undone. This will permanently delete your account
+                      and remove your data from our servers.
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    <AlertDialogAction>Continue</AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+            </HoveredLink>
+          </div>
+        </MenuItem>
+
       </Menu>
     </div>
   );

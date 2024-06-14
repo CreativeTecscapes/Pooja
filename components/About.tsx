@@ -9,8 +9,8 @@ I am passaniote about my work and my hobbies are singing dancing.
 
 export default function TextGenerateEffectDemo() {
   return(
-    <div className="mt-32">
-        <div className="flex justify-center items-baseline align-middle mt-10 text-3xl text-[#3B82F6]"><strong>About Me</strong></div>
+    <div className="mt-32 lg:mt-60">
+        <div className="flex justify-center items-baseline align-middle mt-10 text-3xl text-[#3B82F6]"><strong>ABOUT ME</strong></div>
         <div className="text-center text-sm lg:px-40 px-7 mt-10">
            <TextGenerateEffect words={words}/>
         </div>

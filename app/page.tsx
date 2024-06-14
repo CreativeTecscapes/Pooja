@@ -4,6 +4,7 @@ import Typing from "@/components/Typing";
 import Svg from "@/components/Svg";
 import About from "@/components/About";
 import Projects from "@/components/Projects"
+import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
       <About />
       <Projects />
+      <Contact />
     </>
   );
 }
