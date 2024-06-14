@@ -30,8 +30,8 @@ const Typing = () => {
 
 
     return (
-        <div>
-            <div className="flex items-center justify-center min-h-screen">
+       
+            <div className="flex items-center justify-center">
                 <div className='mt-40'>
                     <div className="text-2xl sm:text-5xl lg:text-6xl tracking-wide flex flex-col sm:flex-row justify-center p-5 sm:p-10 mt-5 mb-5 text-[#3B82F6]">
                         <div className="typing mb-5 sm:mb-0 sm:mr-5 flex justify-center items-center">
@@ -42,7 +42,7 @@ const Typing = () => {
                 </div>
             </div>
 
-        </div>
+      
     )
 }
 
