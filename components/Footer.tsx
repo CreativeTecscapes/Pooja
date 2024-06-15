@@ -20,29 +20,29 @@ export function Footer() {
                     fill="black"
                   />
                 </svg>
-                <span className="ml-4 text-lg font-bold">DevUI</span>
+                <span className="ml-4 text-base font-medium text-gray-900">Pooja Bangar</span>
               </div>
             </a>
           </div>
           <div className="w-auto p-8">
             <ul className="-m-5 flex flex-wrap items-center">
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a className="font-medium text-base text-gray-900 hover:text-gray-1000" href="#">
                   Privacy Policy
                 </a>
               </li>
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a className="font-medium text-base text-gray-900 hover:text-gray-1000" href="#">
                   Terms of Service
                 </a>
               </li>
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a className="font-medium text-base text-gray-900 hover:text-gray-1000" href="#">
                   Return Policy
                 </a>
               </li>
               <li className="p-5">
-                <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                <a className="font-medium text-base text-gray-900 hover:text-gray-1000" href="#">
                   Contact Us
                 </a>
               </li>
